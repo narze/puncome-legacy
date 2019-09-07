@@ -6,7 +6,7 @@
   "author": "Manassarn Manoonchai <manassarn@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "mocha -r ts-node/register tests/**/*.test.ts"
+    "test": "mocha -r ts-node/register test/**/*.test.ts"
   },
   "devDependencies": {
     "@types/chai": "^4.2.1",
