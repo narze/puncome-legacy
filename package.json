@@ -1,0 +1,20 @@
+{
+  "name": "puncome",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:narze/puncome.git",
+  "author": "Manassarn Manoonchai <manassarn@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha -r ts-node/register tests/**/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.1",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  }
+}
