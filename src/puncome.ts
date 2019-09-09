@@ -10,9 +10,4 @@ export default class Puncome {
       return [input];
     }
   }
-
-  static Sum(a: number, b: number): number {
-    let c = a + b;
-    return c;
-  }
 }
