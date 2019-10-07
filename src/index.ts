@@ -4,9 +4,11 @@ import Puncome from '../src/Puncome'
 const app = express()
 const port = 3000
 
-app.get('/', (_, res) => res.send(`Input : ${input}\nOutput : ${output}`))
+app.get('/', (req, res) => {
+  const input = req.query.input || ''
+  const output = Puncome.process(input)
 
-const input = 'ไดโนเสาร์ที่อยู่ในป่าคอนกรีต'
-const output = Puncome.process(input)
+  res.send(`Input : ${input} <br> Output : ${output} <br> <form action="/"><input type="text" name="input" /><button type="submit">Submit</button></form>`)
+})
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
